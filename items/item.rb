@@ -1,5 +1,5 @@
 class Item 
-    attr_accessor :name, :description, :heal, :attack_boost, :defense_boost, :speed_boost, 
+    attr_accessor :name, :description, :heal, :attack_boost, :defense_boost, :speed_boost 
 
     def initialize(name, description, heal, attack_boost, defense_boost, speed)
         @name = name
@@ -23,7 +23,7 @@ class Item
 
         if @defense_boost > 0
             target.defense += @defense_boost 
-            puts "#{target.name}の防御力が#{@defense_boost}上がった}"
+            puts "#{target.name}の攻撃力が#{@defense_boost}上がった}"
         end
 
         if @speed_boost > 0

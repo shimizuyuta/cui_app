@@ -1,5 +1,5 @@
 class Character
-    attr_accessor :name, :hp, :attack, :defense, :speed, 
+    attr_accessor :name, :hp, :attack, :defense, :speed 
 
     def initialize(name, hp, attack, defense, speed)
         @name = name
@@ -8,7 +8,6 @@ class Character
         @defense = defense
         @speed = speed
     end
-
     def take_damage(damage)
         @hp -= damage
     end
